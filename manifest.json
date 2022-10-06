@@ -1,0 +1,54 @@
+{
+    "name":"PWA 10C",
+    "short_name":"PWA",
+    "description":"aplicacion para materia PWA",
+    "background-_color":"#fff",
+    "theme_color":"portrait",
+    "display":"standalone",
+    "star_url":"./index.html?utm.source=web.app.manifest",
+    "score":"./",
+    "lang":"es-mx",
+    "icons":[
+        {
+            "src":".images/favicon-1024.png",
+            "size":"1024x1024",
+            "type":"images/png"
+        },
+        {
+            "src":".images/favicon-512.png",
+            "size":"512x512",
+            "type":"images/png"
+        },
+        {
+            "src":".images/favicon-256.png",
+            "size":"256x256",
+            "type":"images/png"
+        },
+        {
+            "src":".images/favicon-128.png",
+            "size":"128x128",
+            "type":"images/png"
+        },
+        {
+            "src":".images/favicon-96.png",
+            "size":"96x96",
+            "type":"images/png"
+        },
+        {
+            "src":".images/favicon-64.png",
+            "size":"64x64",
+            "type":"images/png"
+        },
+        {
+            "src":".images/favicon-32.png",
+            "size":"32x32",
+            "type":"images/png"
+        },
+        {
+            "src":".images/favicon-16.png",
+            "size":"16x16",
+            "type":"images/png"
+        }
+
+    ]
+}
