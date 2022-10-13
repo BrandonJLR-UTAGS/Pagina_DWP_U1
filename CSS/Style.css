@@ -71,7 +71,7 @@ display: inline-block;
     }
 
 #slider{
-    background:url(Imagenes/anya.jpg);
+    background:url(../Imagenes/anya.jpg);
     background-attachment: fixed;
     background-repeat:no-repeat; /* Indicamos que no se repetira */
 	background-size:cover;
