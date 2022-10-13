@@ -4,8 +4,9 @@ const CACHE_NAME='V1_CACHE_AWP';
 var urlToCache=[
     './',
     './CSS/Style.css',
+    './main.js',
     './Imagenes/anya.jpg',
-    './Imagenes/Intel_logo_(2006-2020).png'
+    './Imagenes/Intel_logo_(2006-2020).jpg'
 ]
 
 
@@ -16,11 +17,12 @@ self.addEventListener('install',e=>{
             return cache.addAll(urlToCache)
             .then(()=>{
                 self.skipWaiting();
+                console.log('cache cargado correctamente');
 
             })
         })
         .catch(err=>{
-            console.log('no se ha resgistado el cache',err);
+            console.log('no se ha registrado el cache',err);
         })
     )
 })
@@ -56,6 +58,7 @@ self.addEventListener('fetch',e=>{
         .then(res=>{
             if(res){
                 //devuelvo los datos
+                console.log('En funcionamiento',res);
                 return res;
             }
             return fetch(e.request);
