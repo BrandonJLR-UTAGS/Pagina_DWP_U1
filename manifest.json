@@ -3,7 +3,9 @@
     "short_name":"PWA",
     "description":"aplicacion para materia PWA",
     "background-_color":"#fff",
-    "theme_color":"portrait",
+    "theme_color":"#333",
+    "orientation":"portrait",
+
     "display":"standalone",
     "star_url":"./index.html?utm.source=web.app.manifest",
     "score":"./",
