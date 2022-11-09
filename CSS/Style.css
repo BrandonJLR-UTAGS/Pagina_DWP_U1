@@ -82,6 +82,23 @@ display: inline-block;
 }
 
 
+#carrusel{
+  justify-content: center;
+  background-attachment: fixed;
+  background-repeat:no-repeat; /* Indicamos que no se repetira */
+  background-size:cover;
+  width: 50%;
+  height: 300px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 5px;
+    
+
+}
+
+
+
+
 
 #container{
     font-family: 'Amiri Quran', serif;
