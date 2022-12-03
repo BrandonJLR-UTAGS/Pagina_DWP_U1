@@ -1,3 +1,6 @@
+
+
+
 //Asignar nombre y version cache
 const CACHE_NAME='V1_CACHE_AWP';
 
@@ -6,7 +9,8 @@ var urlToCache=[
     './CSS/Style.css',
     './main.js',
     './Imagenes/anya.jpg',
-    './Imagenes/Intel_logo_(2006-2020).jpg'
+    './Imagenes/Intel_logo_(2006-2020).jpg',
+    './video.html'
 ]
 
 
@@ -64,4 +68,22 @@ self.addEventListener('fetch',e=>{
             return fetch(e.request);
         })
     );
-})
+});
+
+
+self.addEventListener('fetch', e =>{
+    const respuesta = caches.match(e.request)
+    .then(res => {
+        if(res)return res;
+        console.log('No existe', e.request.url);
+        return fetch(e.request).then(newResp =>{
+            caches.open('cache-v1')
+            .then(cache=>{
+                cache.put(e.request, newResp);
+            })
+            return newResp.clone;
+        });
+
+    });
+    e.respondWith(respuesta);
+});
