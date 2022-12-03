@@ -6,11 +6,15 @@ const CACHE_NAME='V1_CACHE_AWP';
 
 var urlToCache=[
     './',
+    './index.html',
     './CSS/Style.css',
     './main.js',
+    './manifest.json',
     './Imagenes/anya.jpg',
+    './sw.js',
     './Imagenes/Intel_logo_(2006-2020).jpg',
-    './video.html'
+    './Videos.html',
+    'Imagenes/Computadora.jpg'
 ]
 
 
